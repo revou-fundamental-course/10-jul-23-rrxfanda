@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="shortcut icon" href="assets\png-transparent-eating-healthy-diet-food-healthy-food-natural-foods-food-weight-loss-thumbnail.png">
+    <link rel="stylesheet" href="css\index.css">
+    <script src="script\script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ideal</h1>
+        <h2>Penghitung berat badan anda</h2>
+    </header>
+    <main>
+        <div name="masukan">
+        <h2 id="subtitle">Masukkan input berupa jenis kelamin, berat badan, dan tinggi badan</h2>
+        <form onsubmit="handleSubmit(event)">
+            <legend>Jenis Kelamin</legend>
+            <div class="radio-container">
+                <div>
+                    <input class="input-gender" type="radio" id="male" name="gender" value="laki-laki" required>
+                    <label for="male">Laki-laki</label>
+                </div>
+                <div>
+                    <input class="input-gender" type="radio" id="female" name="gender" value="perempuan" required>
+                    <label for="female">Perempuan</label>
+                </div>
+            </div>
+        <br>
+        <label for="weight">Berat Badan</label>
+        <input type="text" class="input-berat" name="weight" placeholder="Masukkan berat badan dalam satuan kg" required><br>
+        <label for="height">Tinggi Badan</label>
+        <input type="text" class="input-tinggi" name="height" placeholder="Masukkan tinggi badan dalam satuan cm" required><br>
+        <div class="button-container">
+            <input type="submit" class="input-submit" value="Cek">
+            <button type="reset" onclick="handleReset()">Reset</button>
+        </div>        
+        </form>
+        </div>
+        <div name="hasil">
+            <div>Berat Badan Ideal Anda: <span id="berat-ideal"></span></div>
+            <div>Perbedaan dengan berat badan aktual: <span id="perbedaan-berat"></span></div>
+            <div>Status berat badan anda: <span id="status-berat" style="color: black;"></span></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="shortcut icon" href="assets\Healthy-Diet-Transparent-PNG.png">
+    <link rel="stylesheet" href="css\index.css">
+    <script src="js\script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BMI CALCULATOR</h1>
+        <h2>Penghitung berat badan anda</h2>
+    </header>
+    <main>
+        <div name="masukan">
+        <h2 id="subtitle">Body Mass Index (BMI) atau Indeks Massa Tubuh (IMT) adalah nilai ukur yang didapat dari perhitungan berat badan dan tinggi badan untuk mengetahui kategori proporsi tubuh seseorang.</h2>
+        <form onsubmit="handleSubmit(event)">
+            <legend>Jenis Kelamin</legend>
+            <div class="radio-container">
+                <div>
+                    <input class="input-gender" type="radio" id="male" name="gender" value="laki-laki" required>
+                    <label for="male">Laki-laki</label>
+                </div>
+                <div>
+                    <input class="input-gender" type="radio" id="female" name="gender" value="perempuan" required>
+                    <label for="female">Perempuan</label>
+                </div>
+            </div>
+        <br>
+        <label for="age">Usia</label>
+        <input type="text" class="input-umur" id="age" placeholder="Masukkan usia anda" required><br>
+        <label for="weight">Berat Badan</label>
+        <input type="text" class="input-berat" name="weight" placeholder="Masukkan berat badan dalam satuan kg" required><br>
+        <label for="height">Tinggi Badan</label>
+        <input type="text" class="input-tinggi" name="height" placeholder="Masukkan tinggi badan dalam satuan cm" required><br>
+        <div class="button-container">
+            <input type="submit" class="input-submit" value="Cek">
+            <button type="reset" onclick="handleReset()">Reset</button>
+        </div>        
+        </form>
+        </div>
+        <div name="hasil">
+            <div>Berat Badan Ideal Anda: <span id="berat-ideal"></span></div>
+            <div>Perbedaan dengan berat badan aktual: <span id="perbedaan-berat"></span></div>
+            <div>Status berat badan anda: <span id="status-berat" style="color: black;"></span></div>
+            <div>Penjelasan: <span id="penjelasan"></span></div>
+        </div>
+        <div class="download-container">
+            <legend>Download Our App</legend>
+            <a href="https://play.google.com/store/apps/details?id=com.splendapps.bmicalc&pli=1"><img src="assets/android.png" alt="Google Play"></a>
+            <a href="https://apps.apple.com/us/app/bmi-bmr-body-fat-calculator/id1326954500"><img src="assets/appstore.png" alt="App Store"></a>
+        </div>
+    </main>
+    <footer>
+        <p>Jagalah kesehatan dengan mengonsumsi makanan yang sehat dan berolahraga secara teratur</p>
+    </footer>
+</body>
+</html>

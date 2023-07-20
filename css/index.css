@@ -21,9 +21,8 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
   color: #666;
-  margin-bottom: 20px;
 }
 
 main {
@@ -32,26 +31,31 @@ main {
 
 #subtitle {
     border-bottom: 1px solid rgb(30, 30, 30);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
-
 legend {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
+form{
+  background-color: #d3d2d2;
+  padding: 10px;
+  border-radius: 20px;
+}
+
 .radio-container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .input-gender {
   margin-right: 5px;
 }
 
-.input-berat, .input-tinggi {
+.input-umur, .input-berat, .input-tinggi {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
@@ -81,16 +85,37 @@ button:hover {
   margin-top: 20px;
   background-color: #f2f2f2;
   padding: 20px;
+  border-radius: 20px;
 }
 
 span {
   font-weight: bold;
 }
 
+.download-container {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d2d2;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+  .download-container img {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+  }
+
 footer {
   background-color: #333;
-  font-style: italic;
-  color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
 }
